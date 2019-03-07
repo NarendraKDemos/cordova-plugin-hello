@@ -13,13 +13,13 @@ public class Hello extends CordovaPlugin {
 
         if (action.equals("greet")) {
 
-            String name = data.getString(0);
-            String message = "Hello, " + name;
+            //String name = data.getString(0);
+            //String message = "Hello, " + name;
             //callbackContext.success(message);
             
             new AlertDialog.Builder(this.cordova.getActivity())
                 .setTitle("Plugin Demo")
-                .setMessage("My name is " + name)
+                .setMessage("My name is suhas")
 
                 // Specifying a listener allows you to take an action before dismissing the dialog.
                 // The dialog is automatically dismissed when a dialog button is clicked.
