@@ -20,6 +20,9 @@ public class Hello extends CordovaPlugin {
             
             //Toast.makeText(this.cordova.getActivity(), message, Toast.LENGTH_LONG).show();
             
+            Runnable runnable = new Runnable() {
+            public void run() {
+            
             new AlertDialog.Builder(this.cordova.getActivity())
                 .setTitle("Delete entry")
                 .setMessage("Are you sure you want to delete this entry?")
@@ -31,8 +34,10 @@ public class Hello extends CordovaPlugin {
                 .setNegativeButton(android.R.string.no, null)
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
-            
-            return true;
+             };
+           };
+          this.cordova.getActivity().runOnUiThread(runnable);
+          return true;
 
         } else {
             
