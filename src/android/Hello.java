@@ -23,7 +23,7 @@ public class Hello extends CordovaPlugin {
             Runnable runnable = new Runnable() {
             public void run() {
             
-            new AlertDialog.Builder(this.cordova.getActivity())
+            new AlertDialog.Builder(cordova.getActivity())
                 .setTitle("Delete entry")
                 .setMessage("Are you sure you want to delete this entry?")
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
