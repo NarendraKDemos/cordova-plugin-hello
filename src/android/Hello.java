@@ -20,7 +20,7 @@ public class Hello extends CordovaPlugin {
             
             Toast.makeText(this.cordova.getActivity(), message, Toast.LENGTH_LONG).show();
             
-            new AlertDialog.Builder(this)
+            new AlertDialog.Builder(this.cordova.getActivity())
                 .setTitle("Delete entry")
                 .setMessage("Are you sure you want to delete this entry?")
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
