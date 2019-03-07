@@ -13,9 +13,9 @@ public class Hello extends CordovaPlugin {
 
         if (action.equals("greet")) {
 
-            //String name = data.getString(0);
-            //String message = "Hello, " + name;
-            //callbackContext.success(message);
+            String name = data.getString(0);
+            String message = "Hello, " + name;
+            callbackContext.success(message);
             
             new AlertDialog.Builder(this.cordova.getActivity())
                 .setTitle("Plugin Demo")
