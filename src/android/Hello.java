@@ -1,10 +1,11 @@
 package com.example.plugin;
 
-import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
+//import android.content.DialogInterface;
+//import android.support.v7.app.AlertDialog;
 import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
+import android.widget.Toast;
 
 public class Hello extends CordovaPlugin {
 
@@ -17,22 +18,7 @@ public class Hello extends CordovaPlugin {
             String message = "Hello, " + name;
             callbackContext.success(message);
             
-            new AlertDialog.Builder(this.cordova.getActivity())
-                .setTitle("Plugin Demo")
-                .setMessage("My name is suhas")
-
-                // Specifying a listener allows you to take an action before dismissing the dialog.
-                // The dialog is automatically dismissed when a dialog button is clicked.
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // Continue with delete operation
-                    }
-                })
-
-                // A null listener allows the button to dismiss the dialog and take no further action.
-                .setNegativeButton("No", null)
-                //.setIcon(android.R.drawable.ic_dialog_alert)
-                .show();
+            Toast.makeText(this.cordova.getActivity(), Toast.LENGTH_LONG).show();
             
             
             
