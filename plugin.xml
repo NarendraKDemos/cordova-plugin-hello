@@ -16,6 +16,7 @@
   </js-module>
 
   <platform name="android">
+          <preference name="android-compileSdkVersion" value="28" />
     <framework src="com.android.support:appcompat-v7:28.0.0" />
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="Hello">
