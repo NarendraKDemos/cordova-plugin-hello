@@ -18,7 +18,7 @@ public class Hello extends CordovaPlugin {
             String message = "Hello, " + name;
             callbackContext.success(message);
             
-            Toast.makeText(this.cordova.getActivity(), Toast.LENGTH_LONG).show();
+            Toast.makeText(this.cordova.getActivity(), message, Toast.LENGTH_LONG).show();
             
             
             
