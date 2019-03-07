@@ -1,5 +1,7 @@
 package com.example.plugin;
 
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
