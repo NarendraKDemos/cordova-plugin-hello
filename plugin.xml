@@ -18,7 +18,7 @@
   <platform name="android">
      
    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="overwrite">
-    <application android:theme="NewLabel" android:theme="@style/Theme.AppCompat" />
+    <application android:theme="@style/Theme.AppCompat" />
 </edit-config>
    <framework src="com.android.support:appcompat-v7:26.0.0" />
     <config-file target="res/xml/config.xml" parent="/*">
