@@ -24,7 +24,7 @@
       </feature>
     </config-file>
 
- <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="overwrite">
+ <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="merege">
     <application  android:name="com.example.plugin.TestApplication" />
 </edit-config>
     <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
