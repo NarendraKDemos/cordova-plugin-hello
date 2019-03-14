@@ -24,9 +24,9 @@
       </feature>
     </config-file>
 
- <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="merege">
-    <application  android:name="com.example.plugin.TestApplication" />
-</edit-config>
+ <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:label='@string/activity_name']" mode="merge">
+        <activity android:theme="@android:style/Theme.AppCompat"></activity>
+    </edit-config>
     <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
   </platform>
 
