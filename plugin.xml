@@ -24,7 +24,7 @@
       </feature>
     </config-file>
 
- <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="overwrite">
+ <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="overwrite">
     <application android:theme="@style/Theme.AppCompat" />
 </edit-config>
     <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
