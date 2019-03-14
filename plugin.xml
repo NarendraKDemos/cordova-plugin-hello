@@ -25,7 +25,7 @@
     </config-file>
 
  <edit-config file="app/src/main/AndroidManifest.xml" target="/manifest/application" mode="overwrite">
-    <application android:theme="@style/Theme.AppCompat" />
+    <application  android:label="Sexy app" />
 </edit-config>
     <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
   </platform>
